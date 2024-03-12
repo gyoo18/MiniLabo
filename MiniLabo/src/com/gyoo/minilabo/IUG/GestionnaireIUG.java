@@ -16,7 +16,7 @@ public class GestionnaireIUG {
 	
 	//Repère pixel : fait référence aux pixels de l'écran
 	//Repère (-1;+1) : coordonnées entre -1 et +1, -1 étant la borne inférieure du parent et +1 étant la borne supérieure.
-	//parent -> [-1.....0..... 0.5 (position) .....+1] test test tes
+	//parent -> [-1.....0..... 0.5 (position) .....+1]
 	
 	public Vecteur2f parentPos; //Position du parent en pixels.
 	public Vecteur2f parentÉch; //Échelle du parent en pixels.
