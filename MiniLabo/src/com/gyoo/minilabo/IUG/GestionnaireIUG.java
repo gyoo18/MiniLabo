@@ -263,7 +263,7 @@ public class GestionnaireIUG {
 							CôtéIndexePanneau.get(PanneauIndexeCôté.get(coinAttrapéPanneau2)[3]).remove(Integer.valueOf(coinAttrapéPanneau2));
 							
 							panneaux.set(coinAttrapéPanneau2,null); //Détruire le panneau adjascent.
-							CôtéPos.set(coinAttrapéCôtéX,-1000f); //Envoyer le côté très loin pour qu'il ne bloque plus le chemin.
+							CôtéPos.set(coinAttrapéCôtéX,-10000f); //Envoyer le côté très loin pour qu'il ne bloque plus le chemin.
 							//On ne retire pas les cases de la liste, puisqu'il faudrait réarranger tout les indexes par la suite.
 						}else if(Math.abs(voyagé.y)>Math.abs(voyagé.x) && coinAttrapéPanneauxAxe && panneaux.get(coinAttrapéPanneau).avoirÉch().x == panneaux.get(coinAttrapéPanneau2).avoirÉch().x) {
 							//Si le curseur a glissé en direction des Y, que l'axe de l'interface est Y et que les deux panneaux ont la même largeur.
@@ -278,7 +278,7 @@ public class GestionnaireIUG {
 							CôtéIndexePanneau.get(PanneauIndexeCôté.get(coinAttrapéPanneau2)[3]).remove(Integer.valueOf(coinAttrapéPanneau2));
 							
 							panneaux.set(coinAttrapéPanneau2,null); //Détruire le panneau adjascent.
-							CôtéPos.set(coinAttrapéCôtéY,-1000f); //Envoyer le côté très loin pour qu'il ne bloque plus le chemin.
+							CôtéPos.set(coinAttrapéCôtéY,-10000f); //Envoyer le côté très loin pour qu'il ne bloque plus le chemin.
 						}
 					}else if( !( curPosRel.x * curPosCoinRel.x < 0f || curPosRel.y * curPosCoinRel.y < 0f ) ){
 						//Si le curseur n'est pas sortis du panneau.
