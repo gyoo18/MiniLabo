@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgraphiques.a CMakeFiles/graphiques.dir/Fenêtre.cpp.o CMakeFiles/graphiques.dir/Peintre.cpp.o
+/usr/bin/ranlib libgraphiques.a

@@ -1,0 +1,1 @@
+/usr/bin/clang++ CMakeFiles/MiniLabo.dir/MiniLabo.cpp.o -o MiniLabo  graphiques/libgraphiques.a -lglfw -lOpenGL 
