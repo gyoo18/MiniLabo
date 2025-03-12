@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 
 Fenêtre::Fenêtre(int l, int h, Peintre* peintre){
+    printf("Création de la fenêtre");
     m_largeurPx = l;
     m_hauteurPx = h;
 
@@ -13,6 +14,8 @@ Fenêtre::Fenêtre(int l, int h, Peintre* peintre){
     if (m_glfwFenêtre == nullptr){
         throw std::runtime_error("La fenêtre GLFW n'a pas pue être créé.");
     }
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 6);
     glfwMakeContextCurrent(m_glfwFenêtre);
     glfwShowWindow(m_glfwFenêtre);
 
@@ -27,6 +30,7 @@ bool Fenêtre::devraitFermer(){
 
 void Fenêtre::miseÀJour(){
     glfwPollEvents();
+    m_peintre->miseÀJour();
     glfwSwapBuffers(m_glfwFenêtre);
 }
 
