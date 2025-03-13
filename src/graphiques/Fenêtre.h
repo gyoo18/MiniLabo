@@ -12,9 +12,12 @@ public:
 private:
 
 public:
+    static void surMiseÀJourFenêtre(GLFWwindow* fenêtre, int l, int h);
+
     Fenêtre(int l, int h, Peintre* peintre);
     bool devraitFermer();
     void miseÀJour();
+    void surMiseÀJourFenêtre(int l, int h);
     ~Fenêtre();
 private:
 

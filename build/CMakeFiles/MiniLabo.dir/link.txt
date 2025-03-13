@@ -1,1 +1,0 @@
-/usr/bin/clang++ CMakeFiles/MiniLabo.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o CMakeFiles/MiniLabo.dir/src/MiniLabo.cpp.o CMakeFiles/MiniLabo.dir/src/graphiques/Fenêtre.cpp.o -o MiniLabo  -lglfw -lOpenGL 
