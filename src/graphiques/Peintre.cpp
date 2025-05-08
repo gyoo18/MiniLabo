@@ -4,6 +4,8 @@
 #include <glad/glad.h>
 #include <bits/stdc++.h>
 
+#include "Maillage.h"
+
 float positions[] = {
     -0.5, -0.5, -0.5,
      0.5, -0.5, -0.5,
@@ -35,7 +37,7 @@ std::string fragsrc =
     "   Fragment = vec4(pos_O,1.0);\n"
     "}";
 
-GLuint VAO;
+Maillage m({{FLOAT, 1}}, sizeof(positions)/sizeof(float), false);
 GLuint programme;
 
 Peintre::Peintre(){
@@ -45,15 +47,19 @@ Peintre::Peintre(){
 
     glClearColor(0.6,0.6,0.6,1.0);
 
-    glGenVertexArrays(1,&VAO);
-    glBindVertexArray(VAO);
+    // glGenVertexArrays(1,&VAO);
+    // glBindVertexArray(VAO);
 
-    GLuint VBO = 0;
-    glGenBuffers(1,&VBO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(positions), positions, GL_STATIC_DRAW);
-    glVertexAttribPointer(0,3,GL_FLOAT,false,0,nullptr);
-    glEnableVertexAttribArray(0);
+    // GLuint VBO = 0;
+    // glGenBuffers(1,&VBO);
+    // glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    // glBufferData(GL_ARRAY_BUFFER, sizeof(positions), positions, GL_STATIC_DRAW);
+    // glVertexAttribPointer(0,3,GL_FLOAT,false,0,nullptr);
+    // glEnableVertexAttribArray(0);
+
+    m.ajouterAttribut(positions, 3);
+    m.construire();
+    m.préparerAuDessin();
 
     GLuint nuasom = glCreateShader(GL_VERTEX_SHADER);
     const char* src = somsrc.c_str();
