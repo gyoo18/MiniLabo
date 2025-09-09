@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/vincentgodbout/Documents/École/Cégep Hiver 2024/Projet Math/MiniLabo/MiniLabo/lib/glad/cmake_install.cmake")
+  include("/home/vincentgodbout/Documents/École/Cégep Hiver 2024/Projet Math/MiniLabo/MiniLabo/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/vincentgodbout/Documents/École/Cégep Hiver 2024/Projet Math/MiniLabo/MiniLabo/src/cmake_install.cmake")
+  include("/home/vincentgodbout/Documents/École/Cégep Hiver 2024/Projet Math/MiniLabo/MiniLabo/lib/glad/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

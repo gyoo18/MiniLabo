@@ -6,6 +6,7 @@ add_library(graphiques STATIC
     Fenêtre.cpp 
     Peintre.cpp 
     Maillage.cpp
+    Nuanceur.cpp
 )
 
 include_directories(${CMAKE_SOURCE_DIR}/lib/glad/include)
