@@ -1,6 +1,5 @@
 #include "Maillage.h"
 
-#include <iostream>
 #include <algorithm>
 #include <glad/glad.h>
 

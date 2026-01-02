@@ -1,0 +1,23 @@
+{
+    "version":3,
+    "configurePresets": [
+        {
+            "name": "linux-x64-debug",
+            "displayName": "Linux x64 Debug",
+            "description": "Assembler pour Linux x64 (Debug)",
+            "binaryDir": "${sourceDir}/build/linux-x64-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Debug"
+            }
+        },
+        {
+            "name": "linux-x64-release",
+            "displayName": "Linux x64 Release",
+            "description": "Assembler pour Linux x64 (Release)",
+            "binaryDir": "${sourceDir}/build/linux-x64-release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Release"
+            }
+        }
+    ]
+}

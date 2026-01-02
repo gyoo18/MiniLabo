@@ -1,5 +1,8 @@
 .vscode
+
+# Assemblage/CMake
 build
 CMakeFiles
 CMakeCache.txt
 .cache
+build.ninja

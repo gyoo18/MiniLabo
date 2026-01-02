@@ -1,6 +1,6 @@
 #include "Peintre.h"
 
-#include <iostream>
+#include <stdio.h>
 #include <glad/glad.h>
 #include <bits/stdc++.h>
 

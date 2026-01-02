@@ -1,6 +1,7 @@
 #include "Fenêtre.h"
 
-#include <iostream>
+#include <stdio.h>
+#include <stdexcept>
 #include <GLFW/glfw3.h>
 
 Fenêtre::Fenêtre(int l, int h, Peintre* peintre){
